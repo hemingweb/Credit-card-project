@@ -1,5 +1,5 @@
 # Credit-card-project
-go lang credit card validation project
+go (lang) credit card validation project
 
 # Project Description
 For the class project, I want you to create your own Go application. Don't worry, it's just a small exercise to help you get started writing some Go code. Here are the project specs...
