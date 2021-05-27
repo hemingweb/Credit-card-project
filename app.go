@@ -77,7 +77,7 @@ func CheckLuhn(creditCardNumber string) bool {
 		isSecond = !isSecond
 	}
 
-	return (sum%10 == 0)
+	return sum%10 == 0
 }
 
 func Reverse(s string) (result string) {
