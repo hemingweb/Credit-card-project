@@ -63,9 +63,9 @@ func CheckLuhn(creditCardNumber string) bool {
 	sum := 0
 	isSecond := false
 
-	for _, d := range Reverse(creditCardNumber) {
+	for i := len(creditCardNumber) - 1; i >= 0; i-- {
 
-		d := int(d - '0')
+		d := int(creditCardNumber[i] - '0')
 
 		if isSecond {
 			d = d * 2
@@ -78,11 +78,4 @@ func CheckLuhn(creditCardNumber string) bool {
 	}
 
 	return sum%10 == 0
-}
-
-func Reverse(s string) (result string) {
-	for _, v := range s {
-		result = string(v) + result
-	}
-	return
 }
